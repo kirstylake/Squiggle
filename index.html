@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="lib/p5.js"></script>
+  <script src="sketch.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Import the google font used to make the Squiggle title -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+  <title>SQUIGGLE</title>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="box header">
+
+      <div id="SquiggleHeader"> SQUIGGLE <img class=".noHover" id="squiggle" src='assets/SquigglePens.png'></div>
+      <button id="clearButton">Clear</button>
+      <button id="saveImageButton">Save Image</button>
+    </div>
+    <div class="box" id="sidebar"></div>
+    <div id="content"></div>
+    <div class="box colourPalette">
+    </div>
+    <div class="box options">
+    </div>
+
+    <!-- Scripts Added to the bottom of the body tag to make th eapplication run faster -->
+    <script src="toolbox.js"></script>
+    <script src="colourPalette.js"></script>
+    <script src="helperFunctions.js"></script>
+    <script src="tools/freehandTool.js"></script>
+    <script src="tools/lineToTool.js"></script>
+    <script src="tools/sprayCanTool.js"></script>
+    <script src="tools/mirrorDrawTool.js"></script>
+    <script src="tools/eraserTool.js"></script>
+    <script src="tools/paintTool.js"></script>
+    <script src="tools/stickerTool.js"></script>
+    <script src="tools/autoDrawTool.js"></script>
+    <script src="tools/spirographTool.js"></script>
+    <script src="tools/bucketTool.js"></script>
+</body>
+
+</html>

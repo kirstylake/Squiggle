@@ -1,0 +1,128 @@
+html, body {
+	margin: 0px;
+	height: 100%;
+}
+
+#sidebar {
+	grid-area: sidebar;
+	overflow-y: scroll;
+}
+
+#content {
+	grid-area: content;
+}
+
+.header {
+	grid-area: header;
+	font-family: Helvetica, sans-serif
+}
+
+.footer {
+	grid-area: footer;
+}
+
+.sideBarItem {
+	max-height: 50px;
+	max-width: 50px;
+	padding: 5px;
+}
+
+.sideBarItem img {
+	max-height: 40px;
+	max-Width: 40px;
+}
+
+.colourPalette {
+	grid-area: colourP;
+	display: flex;
+	flex-direction: grid;
+	flex-flow: wrap;
+	padding-left: 50px;
+	padding-top: 5px;
+	font-family: Helvetica, sans-serif;
+	visibility: colourVisibility;
+	line-height: 40px;
+
+}
+
+.options {
+	grid-area: options;
+	padding: 15px;
+	font-family: Helvetica, sans-serif;
+}
+
+.colourSwatches {
+	box-sizing: border-box;
+	width: 1000px;
+	height: 40px;
+	max-height: 40px;
+	max-width: 100px;
+	margin: 5px;
+}
+
+
+.wrapper {
+	display: grid;
+	height: 100%;
+	grid-template-columns: 70px 230px minmax(500px, 1fr);
+	grid-template-rows: 35px minmax(500px, 1fr) 160px;
+	grid-template-areas:
+		"header header header"
+		"sidebar content content"
+		"colourP colourP options";
+	background-color: #fff;
+	color: #444;
+}
+
+.box {
+	background-color: #444;
+	color: #fff;
+	font-size: 100%;
+}
+
+.header {
+	background-color: #444;
+	display: flex;
+}
+
+/* ADDITIONAL CSS  */
+
+/* Some very basic CSS styling to add a hover effect when the user goes over a clickable element */
+.img {
+	border-radius: 100%;
+}
+
+/* I also changed the cursor into a pointer when you hover over clickable items (ie, the images)*/
+img:hover {
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+	filter: drop-shadow(0px 10px 3px #888888);
+	cursor: pointer;
+}
+
+/* Styling for the Heading and the LOGO */
+#SquiggleHeader {
+	font-family: 'Neucha', cursive;
+	font-size: 2.1rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 7px;
+}
+
+/* Setting a style for the squiggle image */
+#squiggle {
+	height: 100%;
+	/* Disable the hover for the squiggle logo */
+	pointer-events: none;
+}
+
+/* Setting styles for the buttons */
+button {
+	margin-right: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px
+}
+
